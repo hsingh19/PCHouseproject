@@ -1,10 +1,10 @@
-import { A4appPage } from './app.po';
+import { PublisherClearingHousePage } from './app.po';
 
-describe('a4app App', () => {
-  let page: A4appPage;
+describe('publisher-clearing-house App', () => {
+  let page: PublisherClearingHousePage;
 
   beforeEach(() => {
-    page = new A4appPage();
+    page = new PublisherClearingHousePage();
   });
 
   it('should display welcome message', () => {

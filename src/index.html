@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>A4app</title>
+  <title>PublisherClearingHouse</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +11,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script type="javascript">
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if($(this).scrollTop() > 100){
+          $('#goTop').stop().animate({
+            top: '20px'
+          }, 500);
+        }
+        else{
+          $('#goTop').stop().animate({
+            top: '-100px'
+          }, 500);
+        }
+      });
+      $('#goTop').click(function() {
+        $('html, body').stop().animate({
+          scrollTop: 0
+        }, 500, function() {
+          $('#goTop').stop().animate({
+            top: '-100px'
+          }, 500);
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-<div class="container">
   <app-root></app-root>
-</div>
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">Place sticky footer content here.</span>
-    </div>
-  </footer>
+  <app-navbar></app-navbar>
+  <app-footer></app-footer>
 </body>
 </html>

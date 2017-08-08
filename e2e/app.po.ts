@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class A4appPage {
+export class PublisherClearingHousePage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,0 +1,7 @@
+#goTop{
+  background:red;
+  padding:5px;
+  position:fixed;
+  top:-100px;
+  right:10px;
+}
