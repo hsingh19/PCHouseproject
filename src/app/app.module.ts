@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { NewsComponent } from './news/news.component';
+import { NewsbarComponent } from './news/newsbar/newsbar.component';
+import { NewscontentComponent } from './news/newscontent/newscontent.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { RegistrationComponent } from './registration/registration.component';
     FooterComponent,
     NavbarComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    NewsComponent,
+    NewsbarComponent,
+    NewscontentComponent
     
   ],
   imports: [
@@ -28,6 +34,10 @@ import { RegistrationComponent } from './registration/registration.component';
       {
         path : 'register',
         component : RegistrationComponent
+      },
+      {
+        path: 'news',
+        component: NewsComponent
       }
     ])
   ],

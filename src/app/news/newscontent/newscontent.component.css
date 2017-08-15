@@ -1,0 +1,63 @@
+.content{
+    /* height: 100vh; */
+    /* width: calc(100vw - 45px); */
+    border: 1px solid blue;
+}
+
+.content h2{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.story-row{
+    padding: 0;
+    margin-top: 20px;
+    display: flex;  
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    
+}
+
+.story{
+    margin-bottom: 20px;
+    flex: 0 1 21%;
+    list-style-type: none;
+}
+
+#image{
+    background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/08/A7-memobottle_15-405x270.jpg');
+    /* width:260px;  */
+    height:160px;
+    display: block;
+background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-title, .story-chunk{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 2px;
+}
+
+.story-dets{
+    padding: 0;
+    list-style-type: none;
+}
+
+.story-dets li{
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+.story-dets li::after{
+    content: '\b7';
+    display: block;
+    float: right;
+    margin: 0 4px;
+}
